@@ -1,0 +1,183 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  /* background-color: #fefefe; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 0;
+}
+
+.container {
+  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+/* 
+HEADER */
+
+.header {
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: auto;
+}
+.nav {
+  margin-right: 30px;
+}
+.nav-list {
+  display: flex;
+  gap: 24px;
+}
+.nav-link {
+  font-size: 14px;
+  padding: 28px 0;
+  display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  font-weight: 700;
+  font-size: 14px;
+
+  color: #bbf330;
+}
+.header-btn {
+  border-radius: 30px;
+  padding: 6px 17px;
+  min-width: 98px;
+  height: 32px;
+  ont-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: right;
+  background-color: #bbf330;
+  cursor: pointer;
+  border: none;
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 14px;
+  padding-bottom: 69px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 143px;
+}
+.hero-img {
+}
+.hero-wrapper {
+  min-width: 511px;
+}
+.title {
+}
+.hero-text {
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.hero-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: right;
+  color: #2c2c2c;
+  border-radius: 30px;
+  padding: 6px 17px;
+  min-width: 98px;
+  height: 32px;
+}
+
+/* OFFERING */
+
+.offering {
+  background-color: #ffe550;
+}
+
+.offering-container {
+  display: flex;
+  align-items: center;
+}
+
+.offering-text-wrap {
+  min-width: 573px;
+}
+
+.offering-list {
+  display: flex;
+  gap: 67px;
+  margin-bottom: 32px;
+}
+
+.offering-item {
+  width: calc(100% - 67px / 2);
+}
+
+.offering-subtitle {
+  margin-bottom: 16px;
+}
+
+/* FAVORITES */
+
+.favorites {
+  padding-top: 120px;
+  padding-bottom: 104px;
+}
+
+.favorites-title {
+  font-size: 42px;
+  text-align: center;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+.favorites-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.favorites-item {
+  border: 16px solid #ffe550;
+  border-radius: 197px;
+  width: 395px;
+  height: 397px;
+  justify-content: center;
+  align-items: center;
+}
