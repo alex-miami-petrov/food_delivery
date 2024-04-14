@@ -28,6 +28,19 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1320px;
   padding-left: 20px;
@@ -262,6 +275,7 @@ button {
   border: 16px solid #ffe550;
   border-radius: 197px;
   width: 395px;
+  /* width: calc(100% - 64px) / 3; */
   height: 397px;
   justify-content: center;
   align-items: center;
@@ -339,3 +353,139 @@ button {
   margin-left: 16px;
   gap: 2px;
 }
+
+/* MODAL */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(94, 99, 99, 0.7);
+}
+.modal {
+  position: absolute;
+  border-radius: 30px;
+  width: 458px;
+  min-height: 449px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffe550;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 32px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  line-height: 0;
+  padding: 0;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 250ms linear;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #7eb101;
+}
+
+.modal-close-btn:hover > .modal-close-icon:hover,
+.modal-close-btn:focus > .modal-close-icon:focus {
+  fill: #fff;
+}
+
+.modal-close-icon {
+  transition: fill 250ms linear;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+.form {
+}
+.modal-field {
+  margin-bottom: 24px;
+}
+.modal-label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-left: 12px;
+  /* color: #2c2c2c; */
+}
+.modal-input {
+  border: 2px solid rgba(199, 29, 29, 0.12);
+  border-radius: 30px;
+  width: 100%;
+  height: 48px;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  outline: transparent;
+  padding-left: 12px;
+}
+
+.modal-input:focus {
+  border: 2px solid #2c2c2c;
+}
+
+.modal-field-mail {
+  margin-bottom: 32px;
+}
+
+.modal-sent-btn {
+  border: 2px solid green;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 106px;
+  height: 40px;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* CHECKBOX */
+
+/* .modal-check {
+}
+.input-check {
+}
+
+.input-check:checked + .label-check > .check {
+  background-color: blue;
+  border: none;
+  fill: #fff;
+}
+
+.label-check {
+}
+
+.check {
+  width: 16px;
+  height: 16px;
+  border: 1px solid red;
+  border-radius: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+}
+.check-icon {
+}
+.check-link {
+  margin-top: 20px;
+} */
