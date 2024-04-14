@@ -180,6 +180,8 @@ button {
 /* OFFERING */
 
 .offering {
+  padding-top: 196px;
+  padding-bottom: 160px;
   background-color: #ffe550;
 }
 
@@ -195,7 +197,7 @@ button {
 
 .offering-title {
   margin-bottom: 20px;
-  margin-top: 160px;
+  /* margin-top: 160px; */
 }
 
 .offering-text {
@@ -244,7 +246,7 @@ button {
   padding: 10px 20px;
   min-width: 106px;
   height: 40px;
-  margin-bottom: 160px;
+  /* margin-bottom: 160px; */
 }
 
 /* FAVORITES */
